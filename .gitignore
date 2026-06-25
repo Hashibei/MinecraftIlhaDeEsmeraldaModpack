@@ -12,9 +12,6 @@ instances/**/logs/
 # Ignorar pastas de downloads automáticos dos launchers
 instances/**/downloads/
 
-# Ignora as configurações de hardware, vídeo e controles de cada usuário
-instances/**/options.txt
-
 # Ignorar arquivos de sistema operacional (Mac/Windows)
 .DS_Store
 Thumbs.db

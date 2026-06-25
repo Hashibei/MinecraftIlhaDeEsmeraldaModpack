@@ -1,0 +1,30 @@
+# =======================================================================
+# GITIGNORE PARA MODPACK DO MINECRAFT
+# =======================================================================
+
+# Ignora mundos singleplayer salvos dentro de qualquer instancia
+instances/**/saves/
+
+# Ignorar relatórios de erros e registros de texto temporários
+instances/**/crash-reports/
+instances/**/logs/
+
+# Ignorar pastas de downloads automáticos dos launchers
+instances/**/downloads/
+
+# Ignora as configurações de hardware, vídeo e controles de cada usuário
+instances/**/options.txt
+
+# Ignorar arquivos de sistema operacional (Mac/Windows)
+.DS_Store
+Thumbs.db
+*.tmp
+
+# =======================================================================
+# OBSERVAÇÃO SOBRE O QUE SERÁ ENVIADO (VÃO SUBIR NORMALMENTE):
+# - /mods/
+# - /config/
+# - /defaultconfigs/
+# - /resourcepacks/
+# - /shaderpacks/
+# =======================================================================

@@ -43,7 +43,7 @@ jobs:
         with:
           tag_name: v-alpha-latest
           name: "Alpha Latest"
-          overwrite: true
+          overwrite_files: true
           prerelease: true
           files: dist/*
           

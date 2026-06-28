@@ -3,7 +3,7 @@ name: Release Modpack Alpha
 on:
   push:
     tags:
-      - '*alpha*'
+      - 'alpha'
 
 permissions:
   contents: write

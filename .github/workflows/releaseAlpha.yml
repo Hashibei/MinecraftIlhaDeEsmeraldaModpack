@@ -1,4 +1,4 @@
-name: Release Alpha
+name: Cria Relase Alpha
 
 on:
   workflow_dispatch: {}
@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   release:
-    name: Cria Modpack Release
+    name: Cria Relase Alpha
     runs-on: ubuntu-latest
 
     steps:
@@ -22,11 +22,19 @@ jobs:
         env:
           TZ: 'America/Sao_Paulo'
 
-      - name: Create Release
+      - name: Create Alpha Dated Release
         uses: softprops/action-gh-release@v3
         with:
           # Junta o 'v-alpha', a data e o número do build (Ex: v-alpha-2026.06.28.1)
           tag_name: v-alpha-${{ steps.date.outputs.date }}.${{ github.run_number }}
+          files: |
+            modpacks/*
+          prerelease: true
+
+      - name: Create Latest Alpha Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: v-alpha-latest
           files: |
             modpacks/*
           prerelease: true

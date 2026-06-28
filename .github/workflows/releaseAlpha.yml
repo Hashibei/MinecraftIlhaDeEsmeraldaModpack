@@ -33,16 +33,17 @@ jobs:
       - name: Create Alpha Dated Release
         uses: softprops/action-gh-release@v3
         with:
-          # Junta o 'v-alpha', a data e o número do build (Ex: v-alpha-2026.06.28.1)
           tag_name: v-alpha-${{ steps.date.outputs.date }}.${{ github.run_number }}
-          files: |
-            modpacks/*
+          name: "Alpha Build ${{ steps.date.outputs.date }}"
           prerelease: true
+          files: dist/*
 
       - name: Create Latest Alpha Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: v-alpha-latest
-          files: |
-            modpacks/*
+          name: "Alpha Latest"
+          overwrite: true
           prerelease: true
+          files: dist/*
+          

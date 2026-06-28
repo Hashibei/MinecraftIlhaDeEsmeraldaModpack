@@ -1,4 +1,4 @@
-name: Release Modpack Manual Automatizado
+name: Release Alpha
 
 on:
   workflow_dispatch: {}

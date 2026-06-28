@@ -3,7 +3,7 @@ name: Release Modpack Alpha
 on:
   push:
     tags:
-      - "v*-alpha.*"
+      - '*alpha*'
 
 permissions:
   contents: write
@@ -22,5 +22,4 @@ jobs:
         with:
           files: |
             modpacks/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: true

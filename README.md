@@ -13,4 +13,4 @@ Para instalar você deve:
 
 ## Como Baixar
 
-Clique aqui: [Clica em mim](https://github.com/Hashibei/MinecraftIlhaDeEsmeraldaModpack/releases/download/v-alpha-latest/IlhaDeEsmeralda.-.Client.mrpack).
+Clique aqui: [Clica em mim](https://github.com/Hashibei/MinecraftIlhaDeEsmeraldaModpack/releases/download/v-alpha-latest/IlhaDeEsmeralda-Client.mrpack).

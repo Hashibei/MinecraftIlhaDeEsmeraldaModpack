@@ -20,7 +20,15 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
         env:
-          TZ: 'America/Sao_Paulo'
+          TZ: "America/Sao_Paulo"
+
+      - name: Rename Modpack Files
+        run: |
+          mkdir -p dist
+          cp "modpacks/IlhaDeEsmeralda - Admin 1.0.0.mrpack"  "dist/IlhaDeEsmeralda - Admin.mrpack"
+          cp "modpacks/IlhaDeEsmeralda - Base 1.0.0.mrpack"   "dist/IlhaDeEsmeralda - Base.mrpack"
+          cp "modpacks/IlhaDeEsmeralda - Client 1.0.0.mrpack" "dist/IlhaDeEsmeralda - Client.mrpack"
+          cp "modpacks/IlhaDeEsmeralda - Server 1.0.0.mrpack" "dist/IlhaDeEsmeralda - Server.mrpack"
 
       - name: Create Alpha Dated Release
         uses: softprops/action-gh-release@v3

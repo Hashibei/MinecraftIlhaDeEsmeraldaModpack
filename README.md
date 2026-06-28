@@ -13,7 +13,4 @@ Para instalar você deve:
 
 ## Como Baixar
 
-Tem 3 formas de você baixar o Modpack:
-
-1. Você pode baixar pelo [Releases do Modpack](https://github.com/Hashibei/MinecraftIlhaDeEsmeraldaModpack/releases/tag/modpacks).
-2. Você pode baixar pelo [IlhaDeEsmeralda - Base](<modpacks/IlhaDeEsmeralda - Base 1.0.0.mrpack>)
+Clique aqui: [Clica em mim.](https://github.com/Hashibei/MinecraftIlhaDeEsmeraldaModpack/releases/download/v-alpha-latest/IlhaDeEsmeralda.-.Client.mrpack).

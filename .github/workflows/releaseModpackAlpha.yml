@@ -1,9 +1,6 @@
-name: Release Modpack Alpha
+name: Release Modpack Manual Automatizado
 
 on:
-  push:
-    tags:
-      - 'alpha'
   workflow_dispatch: {}
 
 permissions:
@@ -11,16 +8,25 @@ permissions:
 
 jobs:
   release:
-    name: Cria Alpha Modpack Release
+    name: Cria Modpack Release
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Pega a data atual formatada
+      - name: Get Current Date
+        id: date
+        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+        env:
+          TZ: 'America/Sao_Paulo'
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
+          # Junta o 'v-alpha', a data e o número do build (Ex: v-alpha-2026.06.28.1)
+          tag_name: v-alpha-${{ steps.date.outputs.date }}.${{ github.run_number }}
           files: |
             modpacks/*
           prerelease: true
